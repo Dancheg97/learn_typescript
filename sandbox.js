@@ -1,6 +1,7 @@
 var character = "lol";
-console.log(character);
-var inputs = document.querySelectorAll("input");
-inputs.forEach(function (input) {
-    console.log(input);
-});
+var age = 12;
+var isBlackBelf = false;
+var circ = function (diameter) {
+    return diameter * Math.PI;
+};
+console.log(circ(123));
