@@ -1,9 +1,12 @@
-let character = "lol";
-let age = 12;
-let isBlackBelf = false;
+let names = ["one", "two", "three"];
 
-const circ = (diameter: number) => {
-  return diameter * Math.PI;
-};
+names.push("toad");
 
-console.log(circ(123));
+let nums = [1, 2, 3, 4];
+
+nums.push(12);
+
+let mix = [1, 2, "3", "33"];
+
+mix.push("asd");
+mix.push(1);

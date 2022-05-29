@@ -1,7 +1,7 @@
-var character = "lol";
-var age = 12;
-var isBlackBelf = false;
-var circ = function (diameter) {
-    return diameter * Math.PI;
-};
-console.log(circ(123));
+var names = ["one", "two", "three"];
+names.push("toad");
+var nums = [1, 2, 3, 4];
+nums.push(12);
+var mix = [1, 2, "3", "33"];
+mix.push("asd");
+mix.push(1);
