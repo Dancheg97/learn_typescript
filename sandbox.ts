@@ -1,12 +1,17 @@
-let names = ["one", "two", "three"];
+let ninja = {
+  name: "stuff",
+  age: 123,
+  belt: "black",
+};
 
-names.push("toad");
+console.log(ninja);
 
-let nums = [1, 2, 3, 4];
+ninja.name = "name";
 
-nums.push(12);
+ninja.age = 123;
 
-let mix = [1, 2, "3", "33"];
-
-mix.push("asd");
-mix.push(1);
+ninja = {
+  name: "asdss",
+  age: 123,
+  belt: "",
+};

@@ -1,7 +1,13 @@
-var names = ["one", "two", "three"];
-names.push("toad");
-var nums = [1, 2, 3, 4];
-nums.push(12);
-var mix = [1, 2, "3", "33"];
-mix.push("asd");
-mix.push(1);
+var ninja = {
+    name: "stuff",
+    age: 123,
+    belt: "black"
+};
+console.log(ninja);
+ninja.name = "name";
+ninja.age = 123;
+ninja = {
+    name: "asdss",
+    age: 123,
+    belt: ""
+};
