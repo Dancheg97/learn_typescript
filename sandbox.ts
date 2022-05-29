@@ -1,6 +1,3 @@
-const character = "lol";
-console.log(character);
-var inputs = document.querySelectorAll("input");
-inputs.forEach((input) => {
-  console.log(input);
-});
+let character = "lol";
+let age = 12;
+let isBlackBelf = false;
