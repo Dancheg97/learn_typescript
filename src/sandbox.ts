@@ -1,5 +1,14 @@
-const minus = (a: number, b: number) => {
-  return a - b;
+type stuff = {
+  a: number;
+  b: number;
+  f: string | number;
+  c?: string;
+  d?: string;
+  e?: string;
 };
 
-console.log(minus(123, 12));
+const minus = (a: stuff): string => {
+  return `${a.c}+${a.b}`;
+};
+
+console.log(minus({ a: 1, b: 2, f: "" }));
