@@ -1,2 +1,2 @@
 ts:
-	tsc sandbox.ts -w
+	tsc -w
