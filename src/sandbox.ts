@@ -1,6 +1,5 @@
-let greet: Function;
-
-const add = (a: number, b: number, c: number | string = 10) => {
-  console.log(a + b);
-  console.log(c);
+const minus = (a: number, b: number) => {
+  return a - b;
 };
+
+console.log(minus(123, 12));

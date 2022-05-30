@@ -1,6 +1,5 @@
 "use strict";
-let greet;
-const add = (a, b, c = 10) => {
-    console.log(a + b);
-    console.log(c);
+const minus = (a, b) => {
+    return a - b;
 };
+console.log(minus(123, 12));
