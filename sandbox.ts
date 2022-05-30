@@ -1,3 +1,5 @@
-let uid: string | number;
-uid = "123";
-uid = 123;
+let coolObj: {
+  name: string;
+  age: number;
+  belt: boolean;
+};
