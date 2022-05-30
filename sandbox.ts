@@ -1,11 +1,11 @@
-let coolObj: {
-  name: string;
-  age: number;
-  belt: boolean;
-};
+let age: any;
 
-coolObj = {
-  name: "asd",
-  age: 12,
-  belt: false,
-};
+age = 32;
+
+age = "123121sss";
+
+let stuff: any[] = [];
+
+stuff.push("asd");
+stuff.push("13");
+stuff.push(1232);
