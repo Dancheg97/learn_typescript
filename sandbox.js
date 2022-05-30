@@ -1,5 +1,6 @@
 var character;
 var age;
 var isLogged;
-var ninjas;
-ninjas = ["one", "two"];
+var ninjas = [];
+ninjas.push("as", "fas,false;");
+console.log(ninjas);

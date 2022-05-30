@@ -2,6 +2,8 @@ let character: string;
 let age: number;
 let isLogged: boolean;
 
-let ninjas: string[];
+let ninjas: string[] = [];
 
-ninjas = ["one", "two"];
+ninjas.push("as", "fas,false;");
+
+console.log(ninjas);
