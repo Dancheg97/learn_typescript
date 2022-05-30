@@ -2,8 +2,9 @@ let character: string;
 let age: number;
 let isLogged: boolean;
 
-let ninjas: string[] = [];
+let mixed: (string | number)[] = [];
 
-ninjas.push("as", "fas,false;");
+mixed.push(20);
+mixed.push("asdas");
 
-console.log(ninjas);
+console.log(mixed);
