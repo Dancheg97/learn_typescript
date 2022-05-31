@@ -6,5 +6,5 @@ const details = document.querySelector("#details");
 const amount = document.querySelector("#amount");
 form.addEventListener("submit", (e) => {
     e.preventDefault();
-    console.log(type, tofrom, details, amount);
+    console.log(type.value, tofrom.value, details.value, amount.valueAsNumber);
 });
