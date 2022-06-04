@@ -8,9 +8,9 @@ form.addEventListener("submit", (e) => {
     e.preventDefault();
     console.log(type.value, tofrom.value, details.value, amount.valueAsNumber);
 });
-const i1 = new Invoice("mario", "work on mario website", 250);
-const i2 = new Invoice("luigi", "work under my car", 120);
+const i1 = new Invoice("mario", "work on my website", 250);
+const i2 = new Invoice("luigi", "work in my car", 120);
 let invoices = [i1, i2];
 invoices.forEach((e) => {
-    console.log(e.amount, e.client);
+    console.log(e.amount, e.client, e.format());
 });
