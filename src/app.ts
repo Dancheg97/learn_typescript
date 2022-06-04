@@ -4,6 +4,11 @@ const tofrom = document.querySelector("#tofrom") as HTMLInputElement;
 const details = document.querySelector("#details") as HTMLInputElement;
 const amount = document.querySelector("#amount") as HTMLInputElement;
 
+form.addEventListener("submit", (e: Event) => {
+  e.preventDefault();
+  console.log(type.value, tofrom.value, details.value, amount.valueAsNumber);
+});
+
 class Invoice {
   client: string;
   details: string;
@@ -24,7 +29,9 @@ const i2 = new Invoice("luigi", "work under my car", 120);
 
 let invoices: Invoice[] = [i1, i2];
 
-form.addEventListener("submit", (e: Event) => {
-  e.preventDefault();
-  console.log(type.value, tofrom.value, details.value, amount.valueAsNumber);
+invoices.forEach((e) => {
+  console.log(e.amount, e.client, e.details);
 });
+
+
+
