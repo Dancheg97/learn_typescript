@@ -10,14 +10,11 @@ form.addEventListener("submit", (e: Event) => {
 });
 
 class Invoice {
-  readonly client: string;
-  private details: string;
-  public amount: number;
-  constructor(client: string, details: string, amount: number) {
-    this.client = client;
-    this.details = details;
-    this.amount = amount;
-  }
+  constructor(
+    public client: string,
+    public details: string,
+    public amount: number
+  ) {}
 
   format() {
     return `${this.client} owes ${this.amount} for ${this.details}`;
