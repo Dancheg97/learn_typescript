@@ -22,5 +22,5 @@ const i1 = new Invoice("mario", "work on mario website", 250);
 const i2 = new Invoice("luigi", "work under my car", 120);
 let invoices = [i1, i2];
 invoices.forEach((e) => {
-    console.log(e.amount, e.client, e.details);
+    console.log(e.amount, e.client);
 });
