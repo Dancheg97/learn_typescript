@@ -9,18 +9,6 @@ form.addEventListener("submit", (e: Event) => {
   console.log(type.value, tofrom.value, details.value, amount.valueAsNumber);
 });
 
-class Invoice {
-  constructor(
-    public client: string,
-    public details: string,
-    public amount: number
-  ) {}
-
-  format() {
-    return `${this.client} owes ${this.amount} for ${this.details}`;
-  }
-}
-
 const i1 = new Invoice("mario", "work on mario website", 250);
 const i2 = new Invoice("luigi", "work under my car", 120);
 
