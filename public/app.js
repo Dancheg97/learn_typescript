@@ -1,4 +1,4 @@
-"use strict";
+import { Invoice } from "./classes/invoice.js";
 const form = document.querySelector(".new-item-form");
 const type = document.querySelector("#type");
 const tofrom = document.querySelector("#tofrom");

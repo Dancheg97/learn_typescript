@@ -1,4 +1,4 @@
-class Invoice {
+export class Invoice {
   constructor(
     public client: string,
     public details: string,
