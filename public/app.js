@@ -1,4 +1,15 @@
 import { Invoice } from "./classes/invoice.js";
+const me = {
+    name: "test",
+    age: 30,
+    speak(text) {
+        console.log(text);
+    },
+    spend(amount) {
+        console.log(amount);
+        return amount;
+    },
+};
 const form = document.querySelector(".new-item-form");
 const type = document.querySelector("#type");
 const tofrom = document.querySelector("#tofrom");
@@ -14,3 +25,4 @@ let invoices = [i1, i2];
 invoices.forEach((e) => {
     console.log(e.amount, e.client, e.format());
 });
+console.log(me);

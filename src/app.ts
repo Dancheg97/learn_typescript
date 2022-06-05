@@ -1,5 +1,24 @@
 import { Invoice } from "./classes/invoice.js";
 
+interface IsPerson {
+  name: string;
+  age: number;
+  speak(a: string): void;
+  spend(a: number): number;
+}
+
+const me: IsPerson = {
+  name: "test",
+  age: 30,
+  speak(text: string) {
+    console.log(text);
+  },
+  spend(amount: number) {
+    console.log(amount);
+    return amount;
+  },
+};
+
 const form = document.querySelector(".new-item-form") as HTMLFormElement;
 const type = document.querySelector("#type") as HTMLSelectElement;
 const tofrom = document.querySelector("#tofrom") as HTMLInputElement;
@@ -19,3 +38,5 @@ let invoices: Invoice[] = [i1, i2];
 invoices.forEach((e) => {
   console.log(e.amount, e.client, e.format());
 });
+
+console.log(me);
