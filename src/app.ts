@@ -1,29 +1,6 @@
 import { Invoice } from "./classes/invoice.js";
 import { HasFormatter } from "./interfaces/HasFormatter.js";
 
-interface IsPerson {
-  name: string;
-  age: number;
-  speak(a: string): void;
-  spend(a: number): number;
-}
-
-const me: IsPerson = {
-  name: "dan",
-  age: 30,
-  speak(text: string) {
-    console.log(text);
-  },
-  spend(amount: number) {
-    console.log(amount);
-    return amount;
-  },
-};
-
-const greetPerson = (person: IsPerson) => {
-  console.log("person", person.name);
-};
-
 const form = document.querySelector(".new-item-form") as HTMLFormElement;
 const type = document.querySelector("#type") as HTMLSelectElement;
 const tofrom = document.querySelector("#tofrom") as HTMLInputElement;
@@ -43,5 +20,3 @@ let invoices: Invoice[] = [i1, i2];
 invoices.forEach((e) => {
   console.log(e.amount, e.client, e.format());
 });
-
-greetPerson(me);
