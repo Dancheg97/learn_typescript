@@ -1,4 +1,5 @@
 import { Invoice } from "./classes/invoice.js";
+import { HasFormatter } from "./interfaces/HasFormatter.js";
 
 interface IsPerson {
   name: string;
@@ -8,7 +9,7 @@ interface IsPerson {
 }
 
 const me: IsPerson = {
-  name: "test",
+  name: "dan",
   age: 30,
   speak(text: string) {
     console.log(text);
@@ -17,6 +18,10 @@ const me: IsPerson = {
     console.log(amount);
     return amount;
   },
+};
+
+const greetPerson = (person: IsPerson) => {
+  console.log("person", person.name);
 };
 
 const form = document.querySelector(".new-item-form") as HTMLFormElement;
@@ -39,4 +44,4 @@ invoices.forEach((e) => {
   console.log(e.amount, e.client, e.format());
 });
 
-console.log(me);
+greetPerson(me);
