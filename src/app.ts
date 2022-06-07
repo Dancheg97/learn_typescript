@@ -8,19 +8,22 @@ const tofrom = document.querySelector("#tofrom") as HTMLInputElement;
 const details = document.querySelector("#details") as HTMLInputElement;
 const amount = document.querySelector("#amount") as HTMLInputElement;
 
-let stuff: HasFormatter[] = [];
+const template = document.querySelector("ul");
 
 form.addEventListener("submit", (e: Event) => {
   e.preventDefault();
   console.log(type.value, tofrom.value, details.value, amount.valueAsNumber);
   if (type.value === "payment") {
-    stuff.push(new Invoice(tofrom.value, details.value, amount.valueAsNumber));
+    var invoice = new Invoice(
+      tofrom.value,
+      details.value,
+      amount.valueAsNumber
+    );
   } else {
-    stuff.push(new Payment(tofrom.value, details.value, amount.valueAsNumber));
+    var payment = new Payment(
+      tofrom.value,
+      details.value,
+      amount.valueAsNumber
+    ); 
   }
-  console.log(stuff);
-});
-
-stuff.forEach((e) => {
-  console.log("ss", e.format());
 });
